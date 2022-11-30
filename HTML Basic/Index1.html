@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic</title>
+</head>
+<body>
+<!-- Heading Tag -->
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+    <!-- Paragraph Tag -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde placeat obcaecati voluptates voluptatibus alias odit vel deleniti eaque nesciunt, repellat perspiciatis repudiandae in perferendis est!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, commodi.</p>
+    <!-- Link Tag -->
+    <a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutu.be%2FJ32Kjz9_tnI&e=ATMaoMkDVxGpy1TTJ5tGoUPtxfo2Q8ryneAk4nA6HIZNYCFXvjlDGD7C3TblD7gNWtaBTQ6e0xb63cP_17Snu-Y07ed8Hx5z1FxAwg&s=1" target="_blank">My Youtube channel</a>
+    <!-- List Tag -->
+    <ul>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    </ul>
+    <ol>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    </ol>
+    <!-- Table Tag -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <br><hr>
+        <tbody>
+            <tr>
+                <td>Yashvendra singh sengar</td>
+                <td>22</td>
+                <td>sengaryashvds10@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Astha Sengar</td>
+                <td>21</td>
+                <td>sasthasengarvds02@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Yash Sengar</td>
+                <td>23</td>
+                <td>sengaryash2000@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><hr>
+    <!-- form tag -->
+    <form>
+        <!-- We use div for to make inline element to block line element -->
+        <div>
+            <!-- in this for is attribute type is attribute etc -->
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+        </div><br>
+        <div>
+            <label for="age">AGE</label>
+            <input type="number" id="age" name="age">
+        </div><br>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div><br>
+        <div>
+            <label for="color">Select you color</label>
+            <select name="color" id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="Green">Green</option>
+            </select>
+        </div><br>
+        <div>
+            <h4>What do you own:- </h4>
+            <input type="checkbox" name="bike" id="bike">
+            <label for="bike">Bike</label>
+            <input type="checkbox" name="car" id="car">
+            <label for="car">Car</label>
+        </div>
+        <div>
+            <h4>Gender;-</h4>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+        </div><br>
+        <div>
+            <input type="submit" value="send" onclick="alert('Hello World!')">
+        </div>
+    </form>
+    <br><hr>
+    <!-- Button tag -->
+    <button>Click me</button><br><br>
+    <!-- Image tag -->
+    <img src="Images/Yash.jpeg" alt="user_image" width="400" height="300">
+    <!-- Input Tag -->
+    <!-- Alert Button -->
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!"><hr><br>
+    <!-- Reset Button  -->
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit" onclick="alert('Submitted!')">
+  <input type="reset">
+  <!-- Password button  -->
+  <div>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd"><br><br>
+    <input type="submit" value="Submit">
+  </div>
+  <!-- color button  -->
+  <div>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  </div>
+  <!-- Date tag -->
+  <br><div>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit" value="Submit">
+  <!-- Date max and min attribute  -->
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31">
+  <input type="reset">
+  <!-- Date Time Local -->
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit" value="Submit">
+  </div><br>
+  <!-- Choose file -->
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+  <!-- Month Field -->
+  <div>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+  </div><br>
+  <!-- Number tag with Range-->
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit" value="Submit"><br><hr>
+  <!-- search field  -->
+  <div>
+      <label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch">
+  </div><br>
+ <!-- Telephone number  -->
+<div>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+</div>
+<!-- Url tag -->
+<br>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+  <!-- Week tag -->
+   <br><hr> <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
